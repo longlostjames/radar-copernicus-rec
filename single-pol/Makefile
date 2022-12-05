@@ -12,7 +12,7 @@ CC     = gcc
 CFLAGS = -Wall -O3 -ffast-math
 LIBS   = -lnetcdf -lfftw3 -lm -lpthread -lrt
 
-URC_PATH = urc
+URC_PATH = ../../universal-radar-code
 PATH_RSP = $(URC_PATH)/RSP/lib
 PATH_RDQ = $(URC_PATH)/RDQ/lib
 PATH_RNC = $(URC_PATH)/RNC/lib
@@ -92,7 +92,7 @@ install :
 	install -d $(INSTALL_DIR)
 	install -o jif -g radar_dt -m 6550 $(EXE)                       $(INSTALL_DIR)
 
-	echo "Installing radar-acrobat-rec"
+	echo "Installing radar-copernicus-rec"
 	echo $(INSTALL_DIR) 
 	cp $(EXE) $(INSTALL_DIR).
 	install -o jif -g radar_dt -m 6550 run_copernicus_data_acquisition.pl $(INSTALL_DIR)
