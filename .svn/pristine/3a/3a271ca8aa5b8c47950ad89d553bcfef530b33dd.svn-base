@@ -1,0 +1,1 @@
+gcc -Wall -ffast-math -O3 -c radar-copernicus-rec.c

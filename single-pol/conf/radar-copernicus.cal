@@ -1,0 +1,45 @@
+#
+# /home/chilbolton_software/radar-copernicus/etc/radar-copernicus.cal
+#
+# This file contains the Z calibration and the range offset
+# for the Copernicus 35GHz radar.
+#
+# z-calibration    : The reflectivity calibration to be added to the raw Z (dB)
+# zdr-calibration  : The calibration to be added to the raw ZDR (dB)
+# ldr-calibration  : The calibration to be added to the raw LDR (dB)
+# range-offset     : The range calibration to be added to the raw range (m)
+# 
+# Notes:
+# - Last updated on 17/06/2004 by EGP
+# - Calibration according to Nicolas relative to CAMRa
+# - Range offset determined from comparison with CAMRa
+# - ZDR calibration has not been carried out
+# 
+# file update 20080317
+# changed the definition of almost all the calibration offsets
+
+ZED_HC_calibration_offset 0 
+ZED_XHC_calibration_offset 0
+ZED_VC_calibration_offset 0
+ZED_XVC_calibration_offset 0
+ZED_HCP_calibration_offset 0
+ZED_XHCP_calibration_offset 0
+ZED_VCP_calibration_offset 0
+ZED_XVCP_calibration_offset 0
+  
+ZDR_C_calibration_offset 0 
+ZDR_CP_calibration_offset 0 
+  
+LDR_HC_calibration_offset 0
+LDR_HCP_calibration_offset 0
+LDR_VC_calibration_offset 0
+LDR_VCP_calibration_offset 0
+
+#range_offset -630
+range-offset 0
+# Used in raw data files
+z-calibration  0
+zdr-calibration  0 
+ldr-calibration  0
+z-incoherent-calibration 0
+
